@@ -90,6 +90,14 @@ border: solid 3px black;
     font-size: 2rem;
     padding: 1rem;
     text-align: left;
+    padding-left: 4rem;
+    background-color: #1ed6d3;
+    border: none;
+}
+
+#homebtns button:hover,#settingbtn button:hover{
+background-color: #26dcd9;
+cursor: pointer;
 }
 #settingbtn{
     margin-top: 6rem;
