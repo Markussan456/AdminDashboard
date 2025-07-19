@@ -76,8 +76,53 @@ input, button, textarea, select {
     grid-area: 2/ 2 /-1 /-1;
     display: grid;
     grid-template-columns: 1fr 1fr 0.7fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr;
     background-color: whitesmoke;
+    
+}
+#yurproj, #announcements{
+justify-self: start;
+align-self: flex-end;
+font-size: 2rem;
+font-weight: bold;
+margin-left: 7rem;
+}
+.projectdiv{
+  align-self: center;
+  justify-self: center;
+ 
+  height: 20rem;
+  width: 40rem;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
+  border-left: 15px solid orange;
+  display: grid;
+  grid-template-rows: 0.3fr 1fr;
+  padding-left: 2rem;
+}
+.mainside p {
+font-size: 1.8rem;
+}
+.projectdiv p {
+  font-size: 1.8rem;
+}
+.firstright,.secondright{
+ 
+  padding-left: 2rem;
+align-self: center;
+  justify-self: center;
+  height: 30rem;
+  width: 28rem;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
+  border-left: 15px solid orange;
+}
+.boldy{
+  font-size: 2rem;
+  font-weight: bold;
+  align-self: end;
 }
 .zerod{
 grid-row: 2/3;
@@ -104,6 +149,7 @@ grid-row: 2/3;
   grid-row: 2/-1;
   display: grid;
   grid-template-rows: repeat(4,1fr);
+  justify-content: start;
 }
 .firstright{
   grid-row: 1/3;
