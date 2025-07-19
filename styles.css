@@ -61,20 +61,23 @@ border: solid 3px black;
 }
 .header{
     grid-column: 2/-1;
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
 }
 .sidebar{
     grid-row: 1/-1;
     display: grid;
     justify-items: center;
     grid-template-rows: 0.6fr 1.7fr 3fr ;
-    background-color: #1ed6d3;
+    background-color: #3992ff;
 }
 .maincontent{
     grid-area: 2/ 2 /-1 /-1;
 }
 #logo{
     height: 3rem;
-    
+    color: white;
     align-self: center;
 }
 #homebtns,#settingbtn{
@@ -91,17 +94,46 @@ border: solid 3px black;
     padding: 1rem;
     text-align: left;
     padding-left: 4rem;
-    background-color: #1ed6d3;
+    background-color: #3992ff;
     border: none;
+    color: white;
 }
 
 #homebtns button:hover,#settingbtn button:hover{
-background-color: #26dcd9;
+background-color: #6faffd;
 cursor: pointer;
 }
 #settingbtn{
     margin-top: 6rem;
 }
-.btntext{
-
+#searchbar{
+  height: 40%;
+  width: 70%;
+  align-self: center;
+  justify-self: center;
+  border-radius: 1rem;
+  background-color: #b6b6b6;
+}
+.pfp{
+  justify-self: center;
+  align-self: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.pfp2{
+  align-self: center;
+  margin-left: 14rem;
+    font-size: 2rem;
+  font-weight: bold;
+}
+.headbtn{
+  
+  font-size: 2rem;
+  font-weight: bold;
+  justify-self: center;
+  align-self: center;
+}
+.headbtn button{
+margin: 0.5rem;
+width: 8rem;
 }
