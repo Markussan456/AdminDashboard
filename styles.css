@@ -1,14 +1,18 @@
 /* Box sizing reset */
 *, *::before, *::after {
   box-sizing: border-box;
+  
 }
 
 /* Remove default margins and padding */
 body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
   margin: 0;
   padding: 0;
+  
 }
-
+html{
+  overflow: hidden;
+}
 /* Set default body styles */
 body {
   font-family: "Roboto", sans-serif;
@@ -78,27 +82,44 @@ input, button, textarea, select {
     grid-template-columns: 1fr 1fr 0.7fr;
     grid-template-rows: 0.3fr 1fr 1fr 1fr;
     background-color: whitesmoke;
+   
     
+}
+.iconscon{
+display: grid;
+  height: 100%;
+  width: 25%;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-self: end;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+}
+.ikon{
+  width: 3rem;
+  height: 3rem;
 }
 #yurproj, #announcements{
 justify-self: start;
 align-self: flex-end;
 font-size: 2rem;
 font-weight: bold;
-margin-left: 7rem;
+margin-left: 2rem;
+}
+#yurproj{
+  margin-left: 4rem;
 }
 .projectdiv{
   align-self: center;
   justify-self: center;
  
-  height: 20rem;
-  width: 40rem;
+  height: 23rem;
+  width: 47rem;
   border-radius: 1rem;
   background-color: white;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
   border-left: 15px solid orange;
   display: grid;
-  grid-template-rows: 0.3fr 1fr;
+  grid-template-rows: 0.3fr 1fr 0.3fr;
   padding-left: 2rem;
 }
 .mainside p {
@@ -112,13 +133,56 @@ font-size: 1.8rem;
   padding-left: 2rem;
 align-self: center;
   justify-self: center;
-  height: 30rem;
+  height: 90%;
   width: 28rem;
   border-radius: 1rem;
   background-color: white;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4);
   border-left: 15px solid orange;
+
 }
+.pfpikon{
+  height: 5rem;
+  width: 5rem;
+  
+}
+.namez{
+  height: 2rem;
+  align-self: center;
+  grid-column: 2/-1;
+}
+.pirm{
+position: relative;
+top: 1rem;
+ height: 5rem;
+}
+.otr{
+  position: relative;
+top: 1rem;
+ height: 5rem;
+ 
+}
+.tres{
+  position: relative;
+top: 1rem;
+ height: 5rem;
+}
+.tren{
+  position: absolute;
+  bottom: 37rem;
+}
+.contpfp{
+  margin-top: 1rem;
+  position: relative;
+  align-items: center;
+  height: 25rem;
+  row-gap: 7rem;
+display: grid;
+grid-template-columns: 1fr 2fr;
+grid-template-rows: 1fr 1fr 1fr;
+
+}
+
 .boldy{
   font-size: 2rem;
   font-weight: bold;
@@ -141,6 +205,12 @@ grid-row: 2/3;
 .fourth{
   grid-row: 4/5;
 }
+.line{
+  margin-right: 2rem;
+ height: 1px;
+  border: 2px grey solid;
+  border-radius: 1rem;
+}
 .fifth{
   grid-row: 4/5;
   grid-column: 2/3;
@@ -150,9 +220,12 @@ grid-row: 2/3;
   display: grid;
   grid-template-rows: repeat(4,1fr);
   justify-content: start;
+  gap: 3rem;
 }
 .firstright{
   grid-row: 1/3;
+  display: grid;
+
 }
 .secondright{
   grid-row: 3/-1;
