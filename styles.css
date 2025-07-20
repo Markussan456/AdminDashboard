@@ -10,9 +10,7 @@ body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
   padding: 0;
   
 }
-html{
-  overflow: hidden;
-}
+
 /* Set default body styles */
 body {
   font-family: "Roboto", sans-serif;
